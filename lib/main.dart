@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_outlet/views/outlet_control_screen.dart';
 
 void main() {
   runApp(const SmartOutletApp());
@@ -9,6 +10,9 @@ class SmartOutletApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SmartOutletScreen(),
+    );
   }
 }

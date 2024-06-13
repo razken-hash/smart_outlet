@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:smart_outlet/views/outlet_control_screen.dart';
-import 'package:smart_outlet/views/settings_screen.dart';
 import 'package:smart_outlet/views/smart_outlet_nav.dart';
 
 void main() {

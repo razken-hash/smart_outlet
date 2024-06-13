@@ -28,7 +28,7 @@ class _SmartOutletScreenState extends State<SmartOutletScreen> {
             crossAxisSpacing: 10,
             crossAxisCount: 2,
             children: List.generate(
-              4,
+              2,
               (index) => TextButton.icon(
                 label: Text(
                   status[index] ? "ON" : "OFF",

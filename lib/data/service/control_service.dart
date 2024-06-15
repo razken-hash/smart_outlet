@@ -1,18 +1,16 @@
-import 'dart:developer';
-
 import 'package:http/http.dart' as http;
 import 'package:smart_outlet/constants.dart';
 
 class ControlService {
-  Future<void> turnOn() async {
+  static Future<void> turnOn() async {
     await http.post(
-      Uri.parse("$BASE_URL?status=on"),
+      Uri.parse("$BASE_URL?led1=on&led2=on"),
     );
   }
 
-  Future<void> turnOff() async {
+  static Future<void> turnOff() async {
     await http.post(
-      Uri.parse("$BASE_URL?status=off"),
+      Uri.parse("$BASE_URL?led1=off&led2=off"),
     );
   }
 }

@@ -15,10 +15,15 @@ class _SmartOutletNavState extends State<SmartOutletNav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        // backgroundColor: const Color(0xFF2B3B31),
         appBar: AppBar(
           title: const Text(
-            "Smart Outlet",
+            "BRIGHTLET",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
           ),
+          centerTitle: true,
           backgroundColor: Colors.amber,
         ),
         bottomNavigationBar: BottomNavigationBar(
